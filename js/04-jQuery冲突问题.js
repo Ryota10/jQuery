@@ -6,7 +6,7 @@
 //     alert("hello jQuery");
 // });
 
-// 2.自定义一个访问符号
+// 2.自定义一个访问符号 now
 var now = jQuery.noConflict();
 now(function () {
     alert("hello jQuery 2");

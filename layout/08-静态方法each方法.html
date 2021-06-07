@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../common/js/jquery-1.12.0.min.js"></script>
+    <script>
+        var arr = [1, 4, 6, 8, 9, 2, 5, 3];
+        /*
+        第一个参数：遍历到的元素
+        第二个参数：当前遍历到的索引
+
+        注意：
+        原生的 forEach 方法只能遍历数组，不能遍历 伪数组
+        */
+
+        arr.forEach(function (value, index) {
+            console.log(index, value);
+        });
+
+        console.dir("_____________");
+
+        //1.利用jQuery静态方法遍历数组
+        $.each(arr, function (indexInArray, valueOfElement) {
+            console.log(indexInArray, valueOfElement);
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
